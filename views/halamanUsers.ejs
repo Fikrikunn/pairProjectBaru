@@ -10,7 +10,10 @@
 <body>
 
 <%- include('_navbar') %>
-    
+<form class="d-flex" role="search" action="/halamanUsers">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+</form>
 
     <div class="container" style="margin-top: 100px;">
         <a style="margin-bottom: 50px; margin-right: 10px;" href="/profile" class="btn btn-warning">← Back to Profile</a>

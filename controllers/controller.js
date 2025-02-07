@@ -1,4 +1,4 @@
-const { where, Model } = require("sequelize")
+const { where, Model, Op } = require("sequelize")
 const bcrypt = require(`bcryptjs`)
 const { use } = require("../routers")
 const {Symptom, User, DiseaseSymptom, Disease, Profile} = require(`../models/index`)
@@ -236,18 +236,30 @@ class Controller {
         }
     }
 
-    static async showAllUsers(req, res){
+    static async showAllUsers(req, res) {
         try {
-            let allData = await Profile.findAll({
-                include: {
-                    model: User
-                }
-            }) 
-
-           res.render(`halamanUsers`, {allData})
+            let { search } = req.query;
+    
+            let option = {
+                include: { model: User },  // Perbaikan: Tidak boleh kosong
+                where: {}, 
+                order: [['id', 'ASC']]
+            };
+    
+            if (search) {
+                option.where = {  // Perbaikan: Pastikan where ada sebelum ditambahkan
+                    fullName: { [Op.iLike]: `%${search}%` }
+                };
+            }
+    
             
+            let allData = await Profile.findAll(option);
+    
+            res.render(`halamanUsers`, { allData });
+    
         } catch (error) {
-            res.send(error)
+            console.error("ERROR:", error);
+            res.status(500).send("Terjadi kesalahan pada server.");
         }
     }
 
@@ -269,7 +281,6 @@ class Controller {
             res.render(error)
         }
     }
-
 
 }
 
