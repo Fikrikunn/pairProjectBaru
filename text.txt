@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "DiseaseId": 1,
+    "SymptomId": 1,
+    "createdAt": "2025-02-05T14:43:09.161Z",
+    "updatedAt": "2025-02-05T14:43:09.161Z",
+    "Symptom": {
+      "id": 1,
+      "name": "Demam",
+      "createdAt": "2025-02-05T14:43:09.160Z",
+      "updatedAt": "2025-02-05T14:43:09.160Z",
+      "UserId": 1
+    },
+    "Disease": {
+      "id": 1,
+      "name": "Influenza",
+      "description": "Infeksi virus yang menyerang sistem pernapasan.",
+      "level": "Sedang",
+      "createdAt": "2025-02-05T14:43:09.160Z",
+      "updatedAt": "2025-02-05T14:43:09.160Z"
+    }
+  },
+  {
+    "id": 2,
+    "DiseaseId": 1,
+    "SymptomId": 2,
+    "createdAt": "2025-02-05T14:43:09.161Z",
+    "updatedAt": "2025-02-05T14:43:09.161Z",
+    "Symptom": {
+      "id": 2,
+      "name": "Batuk",
+      "createdAt": "2025-02-05T14:43:09.160Z",
+      "updatedAt": "2025-02-05T14:43:09.160Z",
+      "UserId": 2
+    },
+    "Disease": {
+      "id": 1,
+      "name": "Influenza",
+      "description": "Infeksi virus yang menyerang sistem pernapasan.",
+      "level": "Sedang",
+      "createdAt": "2025-02-05T14:43:09.160Z",
+      "updatedAt": "2025-02-05T14:43:09.160Z"
+    }
+  },
+  {
+    "id": 3,
+    "DiseaseId": 2,
+    "SymptomId": 2,
+    "createdAt": "2025-02-05T14:43:09.161Z",
+    "updatedAt": "2025-02-05T14:43:09.161Z",
+    "Symptom": {
+      "id": 2,
+      "name": "Batuk",
+      "createdAt": "2025-02-05T14:43:09.160Z",
+      "updatedAt": "2025-02-05T14:43:09.160Z",
+      "UserId": 2
+    },
+    "Disease": {
+      "id": 2,
+      "name": "Pneumonia",
+      "description": "Infeksi yang menyebabkan peradangan pada kantung udara di paru-paru.",
+      "level": "Parah",
+      "createdAt": "2025-02-05T14:43:09.160Z",
+      "updatedAt": "2025-02-05T14:43:09.160Z"
+    }
+  },
+  {
+    "id": 4,
+    "DiseaseId": 2,
+    "SymptomId": 3,
+    "createdAt": "2025-02-05T14:43:09.161Z",
+    "updatedAt": "2025-02-05T14:43:09.161Z",
+    "Symptom": {
+      "id": 3,
+      "name": "Kelelahan",
+      "createdAt": "2025-02-05T14:43:09.160Z",
+      "updatedAt": "2025-02-05T14:43:09.160Z",
+      "UserId": 1
+    },
+    "Disease": {
+      "id": 2,
+      "name": "Pneumonia",
+      "description": "Infeksi yang menyebabkan peradangan pada kantung udara di paru-paru.",
+      "level": "Parah",
+      "createdAt": "2025-02-05T14:43:09.160Z",
+      "updatedAt": "2025-02-05T14:43:09.160Z"
+    }
+  }
+]

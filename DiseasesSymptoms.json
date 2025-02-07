@@ -1,0 +1,18 @@
+[
+    {
+      "DiseaseId": 1,
+      "SymptomId": 1
+    },
+    {
+      "DiseaseId": 1,
+      "SymptomId": 2
+    },
+    {
+      "DiseaseId": 2,
+      "SymptomId": 2
+    },
+    {
+      "DiseaseId": 2,
+      "SymptomId": 3
+    }
+]

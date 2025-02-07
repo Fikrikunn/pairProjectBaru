@@ -1,0 +1,14 @@
+[
+    {
+      "id": 1,
+      "name": "Influenza",
+      "description": "Infeksi virus yang menyerang sistem pernapasan.",
+      "level": "Sedang"
+    },
+    {
+      "id": 2,
+      "name": "Pneumonia",
+      "description": "Infeksi yang menyebabkan peradangan pada kantung udara di paru-paru.",
+      "level": "Parah"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+      "id": 1,
+      "UserId": 1,
+      "fullName": "Almonti Jourdan",
+      "phone": "0817362198",
+      "address": "Jakarta Selatan"
+    },
+    {
+      "id": 2,
+      "UserId": 2,
+      "fullName": "Muhamad Fiqrhi",
+      "phone": "082288303552",
+      "address": "Padang"
+    }
+]
